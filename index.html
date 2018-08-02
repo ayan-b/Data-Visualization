@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Visualization</title>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./static/materialize/css/materialize.min.css"  media="screen,projection"/>
+    <script src="static/plotly/plotly-latest.min.js"></script>
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-120952687-1');
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Dashboard</a>
+            <ul class="left hide-on-med-and-down">
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div class = "row">
+            <div class ="card col l6 waves-effect waves-block waves-light hoverable pad">
+                <div class="card-title">Temperature</div>
+                <div id="temperature"></div>
+                <hr>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Current </div>
+                    <small>Last Updated</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Max </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Min </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+            </div>
+
+            <div class ="card col l6 waves-effect waves-block waves-light hoverable pad">
+                <div class="card-title">Luminosity</div>
+                <div id="luminosity"></div>
+                <hr>
+                <div class="card tiny col l4 hoverable pad">
+                    <div class="card-title"> Current </div>
+                    <small>Last Updated</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Max </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Min </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+            </div>
+
+            <div class ="card col l6 waves-effect waves-block waves-light hoverable pad">
+                <div class="card-title">Humidity</div>
+                <div id="humidity"></div>
+                <hr>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Current </div>
+                    <small>Last Updated</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Max </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Min </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+            </div>
+
+            <div class ="card col l6 waves-effect waves-block waves-light hoverable pad">
+                <div class="card-title">pH</div>
+                <div id="pH"></div>
+                <hr>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Current </div>
+                    <small>Last Updated</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Max </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+                <div class="card tiny col l4 hoverable">
+                    <div class="card-title"> Min </div>
+                    <small>This Week</small>
+                    <div class="card-content show">35</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src = "js/main.js"></script>
+    <script src = "./static/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="static/materialize/js/materialize.min.js"></script>
+</body>
+</html>
